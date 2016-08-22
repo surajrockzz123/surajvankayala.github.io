@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<title>Venkata Abhishek</title>
+
+<script type="text/javascript" src="jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$(".accordion h3:first").addClass("active");
+	$(".accordion p:not(:first)").hide();
+
+	$(".accordion h3").click(function(){
+		$(this).next("p").slideToggle("slow")
+		.siblings("p:visible").slideUp("slow");
+		$(this).toggleClass("active");
+		$(this).siblings("h3").removeClass("active");
+	});
+
+});
+</script>
+
+<style type="text/css">
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+img { max-width: 100%; }
+
+@media (min-device-width:600px) {
+    img[data-src-600px] {
+        content: attr(data-src-600px, url);
+    }
+}
+
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+}
+
+html { font-size:100%; }
+
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 10px;
+	width: auto;
+	font: 75%/120% Arial, Helvetica, sans-serif;
+}
+.accordion {
+	width: auto;
+	border-bottom: solid 1px #c4c4c4;
+	color:white;
+}
+.accordion h3 {
+	background: #e9e7e7 url(images/arrow-square.gif) no-repeat right -51px;
+	padding: 7px 15px;
+	margin: 0;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	border: solid 1px #c4c4c4;
+	border-bottom: none;
+	cursor: pointer;
+	color:white;
+}
+.accordion h3:hover {
+	
+	background:rgba(0,0,0,0.5);
+	color:white;
+}
+.accordion h3.active {
+	background:rgba(0,0,0,0.5);
+}
+.accordion p {
+	background:rgba(0,0,0,0.5);
+	margin: 0;
+	padding: 10px 15px 20px;
+	border-left: solid 1px #c4c4c4;
+	border-right: solid 1px #c4c4c4;
+}
+
+
+.imageContainer {
+       width:auto; 
+       height:660px; 
+       background-image: url(rock.jpg);
+ }
+ 
+ img.circle{
+ -moz-border-radius-topleft: 90px;
+-moz-border-radius-topright: 90px;
+-moz-border-radius-bottomright: 90px;
+-moz-border-radius-bottomleft: 90;
+
+-webkit-border-top-left-radius: 90px;
+-webkit-border-top-right-radius: 90px;
+-webkit-border-bottom-right-radius: 90px;
+-webkit-border-bottom-left-radius: 90px; 
+
+
+}
+l.header{
+
+font-style: normal;
+
+font-size: 30px;
+
+font-family: "calibri";
+
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+l.designation{
+
+
+
+font-size: 15px;
+
+font-family: "calibri";
+}
+l{
+font-style: normal;
+
+font-size: 30px;
+
+font-family: "calibri";
+
+}
+
+l.projectheading{
+font-style: normal;
+
+font-size: 23px;
+
+font-family: "calibri";
+
+}
+.resume{
+
+-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:19px;
+	-moz-border-radius-topleft:19px;
+	border-top-left-radius:19px;
+	-webkit-border-top-right-radius:19px;
+	-moz-border-radius-topright:19px;
+	border-top-right-radius:19px;
+	-webkit-border-bottom-right-radius:19px;
+	-moz-border-radius-bottomright:19px;
+	border-bottom-right-radius:19px;
+	-webkit-border-bottom-left-radius:19px;
+	-moz-border-radius-bottomleft:19px;
+	border-bottom-left-radius:19px;
+	text-indent:4px;
+	border:12px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:38px;
+	line-height:38px;
+	width:175px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+.classname {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-webkit-border-top-left-radius:42px;
+	-moz-border-radius-topleft:42px;
+	border-top-left-radius:42px;
+	-webkit-border-top-right-radius:42px;
+	-moz-border-radius-topright:42px;
+	border-top-right-radius:42px;
+	-webkit-border-bottom-right-radius:42px;
+	-moz-border-radius-bottomright:42px;
+	border-bottom-right-radius:42px;
+	-webkit-border-bottom-left-radius:42px;
+	-moz-border-radius-bottomleft:42px;
+	border-bottom-left-radius:42px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:34px;
+	width:91px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="imageContainer" align="left">
+
+<div class="accordion">
+	<h3 align="center" style="color:black;">About Me</h3>
+	<p align="center">
+	
+	
+	
+	</br></br></br></br></br></br></br>
+	<img class="circle" src="1.JPG" alt="profile picture" height="180" width="180" align="center"  />
+	</br></br></br>
+	<l class="header"> Venkata A Bavirisetty</l></br></br>
+	<l class="designation">Java Developer | Web Designer</l>
+	
+	
+	</p>	
+
+    <h3 align="center" style="color:black;">Skills</h3>
+    
+
+	<p style="padding-left:400px;">
+	
+
+		
+		<iframe frameborder="0" allowtransparency="true" scrolling="yes" src="mail.html" height="300" width="1250"></iframe>
+		</br></br></br>
+	
+	</p>
+	
+	
+	
+	<h3 align="center" style="color:black;">Projects</h3>
+	<p style="padding-left:280px;padding-right:280;width:1257px;height:380px;line-height:2em;overflow:auto;padding:5px;align:center"><b><l class="projectheading"> MINING WEATHER DATA USING RATTLE</l></b>
+	</br></br>
+	<a href="#" class="classname">R</a>
+	</br></br>
+	<l class="designation" align="justify">This predicts the weather conditions of a location called Canberra using the weather dataset. The results are achieved using efficient techniques called “Data Pre-processing”, “Principal Component Analysis” and “Classification & Prediction”. </l>
+	</br></br></br>
+	<b><l class="projectheading"> ONLINE WEB PORTAL FOR GOVERNMENT ACTIVITIES</l></b>
+	</br></br>
+	<a href="#" class="classname">ASP.net</a>
+		<a href="#" class="classname">C#</a>
+	<a href="#" class="classname">SQL</a>
+
+	</br></br>
+	<l class="designation" align="justify">This web portal provides a platform for public for scheduling and managing the government activities. This provides user for checking the appointment availability for a particular day, booking appointments for various government activities, generating the appointment e-copy for the booked appointment. The acknowledgement is provided in terms of E-mail.</l>
+	</br></br>
+	<b><l class="projectheading"> ONLINE E-COMMERCE FOR SPORTS</l></b>
+	</br></br>
+	<a href="#" class="classname">HTML5</a>
+		<a href="#" class="classname">CSS3</a>
+	<a href="#" class="classname">PHP</a>
+	<a href="#" class="classname">MySQL</a>
+
+	</br></br>
+	<l class="designation" align="justify">This is an online e-commerce portal for sports. The features in this portal include searching the store, adding to cart, order number generation and delivery status provide. This also consists of an admin section where the admin can see the customer’s details, purchases, purchase transactions. Admin can add, edit and delete the items of the store.</l>
+	
+	
+	</br></br>
+	<b><l class="projectheading"> VISUALIZING CRIMES IN CALIFORNIA</l></b>
+	</br></br>
+	<a href="#" class="classname">HTML5</a>
+		<a href="#" class="classname">CSS3</a>
+	<a href="#" class="classname">Java Script</a>
+	<a href="#" class="classname">JSON</a>
+
+	</br></br>
+	<l class="designation" align="justify">This visualizes the crimes that occurred in California at various places and timings using crime dataset. The results are achieved using seven different visualizations, in various ways by considering portions of data. All together kept in a web interface for better accessibility.</l>
+	
+	</br></br>
+	<b><l class="projectheading"> STUDENT MANAGEMENT SYSTEM</l></b>
+	</br></br>
+	
+	<a href="#" class="classname">JSP</a>
+	<a href="#" class="classname">Servlets</a>
+	<a href="#" class="classname">MySQL</a>
+
+	</br></br>
+	<l class="designation" align="justify">This project consists of two sections admin and student. The student section includes registering of the subjects, results, payment of the tuition fee and all the daily updates. The admin can view the entire students list and their details. </l>
+	
+	
+	</br></br></br>
+	<b><l class="projectheading"> LIBRARY MANAGEMENT SYSTEM</l></b>
+	</br></br>
+	
+	<a href="#" class="classname">JSP</a>
+	<a href="#" class="classname">Servlets</a>
+	<a href="#" class="classname">MySQL</a>
+	<a href="#" class="classname">HTML5</a>
+		<a href="#" class="classname">CSS3</a>
+
+	</br></br></br>
+	<l class="designation" align="justify">The main purpose of the system is to provide automation to the library and reduce burden for the staff members. There are two categories of users:
+Librarian: Can issue the book, take the books issued, edit the books database, and view the student’s book history.
+Student:   Can search for a book, place a request for a book, and view his previous requested/issued books and      
+                   renewal of  book can be made.
+</l>
+	
+	
+	
+	
+	
+	
+	
+	</p>
+	<h3 align="center" style="color:black;">Education</h3>
+	<p align="center"></br></br></br><l><b> KENT STATE UNIVERSITY, OH</b></br></br>
+	    <l class="designation"><b>AUG 2013 - DEC 2014</b></l>
+	</br></br></l>
+	<l class="designation" >&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Master's of Science in Computer Science </br></br> GPA: 3.6</l>
+	
+	
+	</br></br></br><l><b> VIGNAN INSTITUTE OF INFORMATION TECHNOLOGY, INDIA</b></br></br>
+	    <l class="designation"><b>AUG 2009 - DEC 2013</b></l>
+	</br></br></l>
+	<l class="designation" >&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Bachelor's of Technology(B.Tech), Information Technology  </br></br> GPA: 3.68</l>
+	
+	</br></br></br>
+	</p>
+	<h3 align="center" style="color:black;">Publications</h3>
+	<p align="center" style="line-height:4em;"><l>Published a paper entitled “MINING WEATHER DATA USING RATTLE” in INTERNATIONAL JOURNAL OF COMPUTER SCIENCE AND NETWORS (IJCSN).</l> <b><a href="http://ijcsn.org/IJCSN-2013/2-3/IJCSN-2013-2-3-88.pdf" target="_blank" style="color:white;text-decoration:none;">View Paper>></a></b>
+	</br></br>
+	<img src="certificate.pdf" alt="certificate" height="150" width="180"/>
+	</p>
+	<h3 align="center" style="color:black;">Contact</h3>
+	<p>
+	</br></br></br></br>
+	
+	
+	<a href="https://www.facebook.com/venkata.abhishek" target="_blank"><img src="facebook-grey.png" alt="facebook_icon" height="40" width="40"></a>
+		<a href="http://www.linkedin.com/in/venkatabavirisetty/" target="_blank"><img src="linked_icon.png" alt="facebook_icon" height="40" width="40"></a>
+
+	</p>
+</div>
+</br>
+<p align="center"><a href="Venkata Abhishek Resume.pdf" class="resume" target="_blank"> Resume</a></p>
+
+</div>
+
+</body>
+</html>
